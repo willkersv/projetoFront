@@ -11,35 +11,19 @@ body{
   width: 100%;
   background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
 }
-.show-btn{
+
+.container{
+  display: block;
   background: #fff;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-weight: 500;
-  color: #3498db;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-}
-.show-btn, .container{
+  width: 410px;
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-input[type="checkbox"]{
-  display: none;
-}
-.container{
-  display: none;
-  background: #fff;
-  width: 410px;
-  padding: 30px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-#show:checked ~ .container{
-  display: block;
-}
 .container .close-btn{
   position: absolute;
   right: 20px;
@@ -63,9 +47,11 @@ input[type="checkbox"]{
   width: 100%;
   margin: 40px 0;
 }
+
 form .data label{
   font-size: 18px;
 }
+
 form .data input{
   height: 100%;
   width: 100%;
@@ -73,20 +59,17 @@ form .data input{
   font-size: 17px;
   border: 1px solid silver;
 }
+
 form .data input:focus{
   border-color: #3498db;
   border-bottom-width: 2px;
 }
-form .forgot-pass{
-  margin-top: -8px;
-}
+
 form .forgot-pass a{
   color: #3498db;
   text-decoration: none;
 }
-form .forgot-pass a:hover{
-  text-decoration: underline;
-}
+
 form .btn{
   margin: 30px 0;
   height: 45px;
