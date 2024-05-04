@@ -58,6 +58,7 @@ form .data input{
   padding-left: 10px;
   font-size: 17px;
   border: 1px solid silver;
+  padding-left: 30px;
 }
 
 form .data input:focus{
@@ -110,4 +111,12 @@ form .signup-link a{
 }
 form .signup-link a:hover{
   text-decoration: underline;
+}
+
+.data i{
+  float:left;
+  font-size: 20px;
+  transform: translateY(-165%);
+  margin-right: 5px;
+  margin-left: 5px;
 }
