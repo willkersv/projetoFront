@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Página de cadastro</title>
+      <link rel="stylesheet" href="../styles/register.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="center">
+         <div class="container">
+            <div class="text">
+               Cadastro
+            </div>
+            <form action="index.html">
+                <div class="circle-container">
+                  <div class="circle profile-pic" onclick="document.getElementById('fileInput').click()">
+                     <span>+</span>
+                     <input type="file" id="fileInput">
+                 </div>
+                 <label>Escolha uma foto para seu perfil :) </label>
+                </div>
+                <div class="data">
+                  <label>Email:</label>
+                  <input type="text" required>
+               </div>
+                <div class="data">
+                    <label>Username:</label>
+                    <input type="text" required>
+                </div>
+               <div class="data">
+                  <label>Senha:</label>
+                  <input type="password" required>
+               </div>
+                <div class="data">
+                    <label>Confirme a senha:</label>
+                    <input type="password" required>
+                </div>
+                <label class="select">Selecione:</label>
+               <div class="radio-container">
+                  <input type="radio" id="option1" name="option" value="option1">
+                  <label for="option1">Voluntario</label>
+                  <input type="radio" id="option2" name="option" value="option2">
+                  <label for="option2">ONG</label>
+              </div>
+               <div class="btn">
+                  <div class="inner"></div>
+                  <button type="submit">cadastrar</button>
+               </div>
+               <div class="signup-link">
+                  Já tem uma conta? <a href="index.html">Faça o login!</a>
+               </div>
+            </form>
+         </div>
+      </div>
+   </body>
+</html>
