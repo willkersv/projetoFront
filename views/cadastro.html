@@ -9,30 +9,43 @@
    <body>
       <div class="center">
          <div class="container">
-            <label for="show" class="close-btn fas fa-times" title="close"></label>
             <div class="text">
                Cadastro
             </div>
-            <form action="#">
-               <div class="data">
-                  <label>Email</label>
+            <form action="index.html">
+                <div class="circle-container">
+                  <div class="circle teste2" onclick="document.getElementById('fileInput').click()">
+                     <span style="font-size: 40px;">+</span>
+                     <input type="file" id="fileInput" >
+                 </div>
+                 <label>Escolha uma foto para seu perfil :) </label>
+                </div>
+                <div class="data">
+                  <label>Email:</label>
                   <input type="text" required>
                </div>
+                <div class="data">
+                    <label>Username:</label>
+                    <input type="text" required>
+                </div>
                <div class="data">
-                <label>Username</label>
-                <input type="text" required>
-             </div>
-               <div class="data">
-                  <label>Senha</label>
+                  <label>Senha:</label>
                   <input type="password" required>
                </div>
-               <div class="data">
-                <label>Confirme a senha</label>
-                <input type="password" required>
-             </div>
+                <div class="data">
+                    <label>Confirme a senha:</label>
+                    <input type="password" required>
+                </div>
+                <label style="font-size: 18px;">Selecione:</label>
+               <div class="radio-container">
+                  <input type="radio" id="option1" name="option" value="option1">
+                  <label for="option1">Voluntario</label>
+                  <input type="radio" id="option2" name="option" value="option2">
+                  <label for="option2">ONG</label>
+              </div>
                <div class="btn">
                   <div class="inner"></div>
-                  <button type="submit">login</button>
+                  <button type="submit">cadastrar</button>
                </div>
                <div class="signup-link">
                   Já tem uma conta? <a href="index.html">Faça o login!</a>
