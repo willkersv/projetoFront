@@ -11,6 +11,10 @@ body {
     background: #fff;
 }
 
+.content {
+    margin: 0px 30px 120px 30px; /* margem superior, direita, inferior, esquerda */
+}
+
 .menu {
     background: #41A689;
     color: #fff;
@@ -48,15 +52,10 @@ body {
     transform: translateX(-50%);
 }
 
-.profile, .banner {
+.profile {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.profile-img, .banner img {
-    max-width: 98%;
-    max-height: 100%;
 }
 
 .profile-img {
@@ -65,68 +64,48 @@ body {
     border-radius: 100%;
 }
 
-.banner {
-    margin-top: 20px;
-}
-
-#main {
+.main {
     padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.inner{
-    margin-top: 10px;
-    color: #3E8C76;
+.main-image {
+    width: 45%;
+}
+
+.text-content {
+    font-family: Arial, sans-serif;
+    color: #167d60;
+    width: 50%;
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color:#fff; /* Cor de fundo para destacar o texto */
+    border-radius: 10px; /* Borda arredondada para a caixa de texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a caixa */
+    float: right; /* Alinha à direita */
+}
+
+.text-content p {
     font-size: 20px;
 }
 
-.inner img {
-    display: block;
-    margin: 0 auto;
-    width: 300px;
-    height: auto;
-}
-
-.thumbnails {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.thumbnails .box img {
-    max-width: 100%;
-    height: auto;
-}
-
-.box {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.box h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.box p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.box a.button {
-    display: inline-block;
+.text-content button {
+    font-family: Arial, sans-serif;
     background: #41A689;
     color: #fff;
+    font-size: 18px;
+    font-weight: bold;
     padding: 10px 20px;
+    margin-top: 100px;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    width: 320px;
-    height: 50px;
+    width: 890px;
+    height: 60px;
 }
 
-.box a.button:hover {
+.text-content button:hover {
     background: #3E8C76;
 }
 
@@ -138,27 +117,7 @@ body {
 }
 
 #footer h2, #footer p {
-    margin-bottom: 20px; /* Aplicado a ambos h2 e p no rodapé */
-}
-
-#footer .icons {
-    list-style-type: none;
-    padding: 0;
     margin-bottom: 20px;
-}
-
-#footer .icons li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-#footer .icons li a {
-    color: #fff;
-    font-size: 24px;
-}
-
-#footer .icons li a:hover {
-    color: #ccc;
 }
 
 .copyright {
