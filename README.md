@@ -1,8 +1,8 @@
-# Projeto de Front-End
+# Projeto da Disciplina Front-End
 
 > Bem-vindo à nossa plataforma de voluntariado!
 
-## Sobre nós:
+## Sobre nós
 
 Nosso projeto apoia a ODS17 - Parcerias e Meios de Implementação, trabalhando para fortalecer as conexões entre organizações sem fins lucrativos e voluntários interessados em causas sociais.
 
@@ -14,7 +14,8 @@ Nosso objetivo é tornar mais fácil para você encontrar oportunidades de volun
 
 Se você é uma organização sem fins lucrativos, cadastre-se na nossa plataforma e publique suas oportunidades de voluntariado. Se você é um voluntário em busca de uma maneira significativa de contribuir, explore as oportunidades disponíveis e encontre aquela que combina com você.
 
-## Autores
+## Integrantes
+
 - Willker Santana Viana
 - Ingryd Belazzi Alves
 - Julio César Bernardo Leite
