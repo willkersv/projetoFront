@@ -1,0 +1,128 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+}
+
+.content {
+    margin: 0px 30px 120px 30px; /* margem superior, direita, inferior, esquerda */
+}
+
+.menu {
+    background: #41A689;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-links ul li {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 20px; 
+}
+
+.menu-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.username {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.main {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image {
+    width: 45%;
+}
+
+.text-content {
+    font-family: Arial, sans-serif;
+    color: #167d60;
+    width: 50%;
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color:#fff; /* Cor de fundo para destacar o texto */
+    border-radius: 10px; /* Borda arredondada para a caixa de texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a caixa */
+    float: right; /* Alinha à direita */
+}
+
+.text-content p {
+    font-size: 20px;
+}
+
+.text-content button {
+    font-family: Arial, sans-serif;
+    background: #41A689;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 100px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 890px;
+    height: 60px;
+}
+
+.text-content button:hover {
+    background: #3E8C76;
+}
+
+#footer {
+    background: #3E8C76;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#footer h2, #footer p {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
