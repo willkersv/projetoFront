@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    background:  linear-gradient(115deg, #75BFAA 10%, #3E8C76 90%);
+}
+
+.menu {
+    background: #41A689;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-links ul li {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 20px; 
+}
+
+.menu-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.username {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.container {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #3E8C76;
+}
+
+.input-container label{
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.input-container input{
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-container textarea{
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+input[type="submit"] {
+    width: 300px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #3E8C76;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    background-color: #62bea4;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+.input-container input[type="file"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+}
