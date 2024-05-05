@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-body {
-    font-family: 'Poppins', sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    line-height: 1.6;
     background:  linear-gradient(115deg, #75BFAA 10%, #3E8C76 90%);
 }
 
 .menu {
     background: #41A689;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,8 +28,9 @@ body {
 }
 
 .menu-links ul li {
-    font-weight: 600;
-    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 20px; 
 }
 
 .menu-links ul li a {
@@ -33,10 +38,29 @@ body {
     text-decoration: none;
 }
 
+.username {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .profile-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
 }
 
 .container {
