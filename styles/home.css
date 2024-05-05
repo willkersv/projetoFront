@@ -1,0 +1,169 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+}
+
+.menu {
+    background: #41A689;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-links ul li {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 20px; 
+}
+
+.menu-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.username {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile, .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img, .banner img {
+    max-width: 98%;
+    max-height: 100%;
+}
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.banner {
+    margin-top: 20px;
+}
+
+#main {
+    padding: 50px 20px;
+}
+
+.inner{
+    margin-top: 10px;
+    color: #3E8C76;
+    font-size: 20px;
+}
+
+.inner img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.thumbnails .box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.box a.button {
+    display: inline-block;
+    background: #41A689;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 320px;
+    height: 50px;
+}
+
+.box a.button:hover {
+    background: #3E8C76;
+}
+
+#footer {
+    background: #3E8C76;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#footer h2, #footer p {
+    margin-bottom: 20px; /* Aplicado a ambos h2 e p no rodapé */
+}
+
+#footer .icons {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#footer .icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#footer .icons li a {
+    color: #fff;
+    font-size: 24px;
+}
+
+#footer .icons li a:hover {
+    color: #ccc;
+}
+
+.copyright {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
