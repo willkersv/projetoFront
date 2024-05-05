@@ -38,6 +38,7 @@ body{
   font-size: 35px;
   font-weight: 600;
   text-align: center;
+  color: #3E8C76;
 }
 .container form{
   margin-top: -20px;
@@ -116,7 +117,24 @@ form .signup-link a:hover{
 .data i{
   float:left;
   font-size: 20px;
-  transform: translateY(-165%);
+  margin-top: -10px;
+  transform: translateY(-115%);
   margin-right: 5px;
   margin-left: 5px;
+}
+
+.menu {
+  background: #41A689;
+  color: #fff;
+  padding: 20px; 
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }

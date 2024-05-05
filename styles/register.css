@@ -28,6 +28,7 @@ body{
   font-size: 35px;
   font-weight: 600;
   text-align: center;
+  color: #3E8C76;
 }
 .container form{
   margin-top: -20px;
@@ -103,7 +104,7 @@ form .signup-link a:hover{
     border-radius: 50%;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +113,7 @@ form .signup-link a:hover{
     margin-bottom: 10px;
 }
 .profile-pic{
-  background-image: url('/assets/images/cadastro/defautPic.jpg');
+  background-image: url('/assets/images/register/defaultPic.png');
 }
 
 .circle-container {
