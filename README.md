@@ -19,3 +19,7 @@ Se você é uma organização sem fins lucrativos, cadastre-se na nossa platafor
 - Willker Santana Viana
 - Ingryd Belazzi Alves
 - Julio César Bernardo Leite
+
+-Link do video: https://youtu.be/RZZzJF19UKY
+
+-Link do GitHub Pages: https://willkersv.github.io/projetoFront/views/index.html
