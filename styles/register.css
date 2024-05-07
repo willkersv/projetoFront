@@ -113,7 +113,7 @@ form .signup-link a:hover{
     margin-bottom: 10px;
 }
 .profile-pic{
-  background-image: url('/assets/images/register/defaultPic.png');
+  background-image: url('../assets/images/register/defaultPic.png');
 }
 
 .circle-container {
