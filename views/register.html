@@ -12,7 +12,7 @@
             <div class="text">
                Cadastro
             </div>
-            <form>
+            <form id="registerForm">
                 <div class="circle-container">
                   <div class="circle profile-pic" onclick="document.getElementById('fileInput').click()">
                      <span>+</span>
@@ -30,11 +30,11 @@
                 </div>
                <div class="data">
                   <label>Senha:</label>
-                  <input id="pwd" type="password" required>
+                  <input id="password" type="password" required>
                </div>
                 <div class="data">
                     <label>Confirme a senha:</label>
-                    <input id="pwd2" type="password" required>
+                    <input id="confirmPassword" type="password" required>
                 </div>
                 <label class="select">Selecione:</label>
                <div class="radio-container">
@@ -45,7 +45,7 @@
               </div>
                <div class="btn">
                   <div class="inner"></div>
-                  <button  type="submit" onclick="registerUser()" >cadastrar</button>
+                  <button  type="submit" onclick="addUser()" >cadastrar</button>
                </div>
                <div class="signup-link">
                   Já tem uma conta? <a href="index.html">Faça o login!</a>
