@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Login bem-sucedido!');
             window.location.href = '../views/home.html';
         } else {
-            alert('Email ou senha incorretos.');
+            alert('Email e/ou senha incorretos.');
         }
     }
 });

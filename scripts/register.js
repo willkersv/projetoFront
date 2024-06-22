@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 users.push(user);
                 localStorage.setItem('users', JSON.stringify(users));
                 form.reset();
-                console.log('Usuário adicionado:', user);
-                console.log('Lista de usuários:', users);
+                // console.log('Usuário adicionado:', user);
+                // console.log('Lista de usuários:', users);
                 alert('Conta criada com sucesso');
                 window.location.href = '../views/index.html';
             };

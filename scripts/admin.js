@@ -1,22 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('mainForm');
+    const addUserForm = document.getElementById('addUserForm');
+    const userList = document.getElementById('userList');
 
-    form.addEventListener('submit', (event) => {
+    addUserForm.addEventListener('submit', (event) => {
         event.preventDefault();
-        addSomething();
+        addUser();
     });
-});
 
-function deleteSomething() {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-    const user = users.find(user => user.email === email && user.password === password);
+    function addUser() {
+        const newUserName = document.getElementById('newUserName').value;
+        const newUserEmail = document.getElementById('newUserEmail').value;
 
-    if (user) {
-        alert('Login bem-sucedido!');
-        window.location.href = '../views/home.html';
-    } else {
-        alert('Email ou senha incorretos.');
+        let users = JSON.parse(localStorage.getItem('users')) || [];
+        users.push({ username: newUserName, email: newUserEmail });
+        localStorage.setItem('users', JSON.stringify(users));
+        addUserForm.reset();
+        displayUsers();
     }
-}
+
+    function displayUsers() {
+        let users = JSON.parse(localStorage.getItem('users')) || [];
+        userList.innerHTML = '';
+
+        users.forEach((user, index) => {
+            const userItem = document.createElement('div');
+            userItem.classList.add('user-item');
+            userItem.innerHTML = `
+                <span>${user.username} (${user.email})</span>
+                <button onclick="deleteUser(${index})">Deletar</button>
+            `;
+            userList.appendChild(userItem);
+        });
+    }
+
+    window.deleteUser = function(index) {
+        let users = JSON.parse(localStorage.getItem('users')) || [];
+
+        users.splice(index, 1);
+        localStorage.setItem('users', JSON.stringify(users));
+        displayUsers();
+    }
+    displayUsers();
+});
