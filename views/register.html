@@ -12,9 +12,9 @@
             <div class="text">
                Cadastro
             </div>
-            <form>
+            <form id="registerForm">
                 <div class="circle-container">
-                  <div class="circle profile-pic" onclick="document.getElementById('fileInput').click()">
+                  <div id="imagePreview" class="circle profile-pic" onclick="document.getElementById('fileInput').click()">
                      <span>+</span>
                      <input type="file" id="fileInput">
                  </div>
@@ -22,7 +22,7 @@
                 </div>
                 <div class="data">
                   <label>Email:</label>
-                  <input id="email" type="text" required>
+                  <input id="email" type="email" required>
                </div>
                 <div class="data">
                     <label>Username:</label>
@@ -30,22 +30,22 @@
                 </div>
                <div class="data">
                   <label>Senha:</label>
-                  <input id="pwd" type="password" required>
+                  <input id="password" type="password" required>
                </div>
                 <div class="data">
                     <label>Confirme a senha:</label>
-                    <input id="pwd2" type="password" required>
+                    <input id="confirmPassword" type="password" required>
                 </div>
                 <label class="select">Selecione:</label>
                <div class="radio-container">
-                  <input type="radio" id="option1" name="option" value="1">
-                  <label for="option1">Voluntario</label>
-                  <input type="radio" id="option2" name="option" value="2">
-                  <label for="option2">ONG</label>
+                  <input type="radio" id="voluntario" name="userType" value="0">
+                  <label>Voluntario</label>
+                  <input type="radio" id="ong" name="userType" value="1">
+                  <label>ONG</label>
               </div>
                <div class="btn">
                   <div class="inner"></div>
-                  <button  type="submit" onclick="registerUser()" >cadastrar</button>
+                  <button  type="submit" >cadastrar</button>
                </div>
                <div class="signup-link">
                   Já tem uma conta? <a href="index.html">Faça o login!</a>

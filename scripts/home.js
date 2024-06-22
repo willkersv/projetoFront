@@ -1,7 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const projectList = document.getElementById('projectList');
+  const loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));  
+  const projectList = document.getElementById('projectList');
 
-    function loadProjects() {
+  if (loggedUser) {
+        const spanUsername = document.getElementById('spanUsername');
+        spanUsername.textContent = loggedUser.username;
+
+        const profileImage = document.getElementById('profileImage');
+        profileImage.src = loggedUser.profileImageBase64;
+    }
+    
+    //vou fazer um sistema para quando o session storage estiver vazio, o cara n consiga entra simplesmente digitando a URL. N fiz isso ainda pq atrapalha os testes!!!!
+    // else {
+    //     // Redirecionar para a página de login se não houver usuário logado
+    //     window.location.href = 'login.html';  // Substitua 'login.html' pelo URL da página de login
+    // }  
+  
+  function loadProjects() {
         const projects = JSON.parse(localStorage.getItem('projects')) || [];
         console.log('Projetos carregados do Local Storage:', projects);  
         
