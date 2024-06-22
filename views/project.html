@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Projetinho Fellas</title>
-    <meta charset="utf-8">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Projeto</title>
     <link rel="stylesheet" href="../styles/project.css">
 </head>
 
 <body>
-	<header class="menu">
-		<div class="menu-links">
-			<ul>
-				<li><a href="../views/home.html">Home</a></li>
-				<li><a href="../views/registerProject.html">Cadastre seu Projeto</a></li>
-			</ul>
-		</div>
-		<a href="/views/home.html" class="logo"> 
-			<img src="../assets/images/home/logo.png" alt="Logo">
-		</a>
-		<div class="profile">
-			<span class="username">Pedro</span>
-			<img src="../assets/images/home/pedro.png" alt="Perfil" class="profile-img">
-		</div>
-	</header>
+    <header class="menu">
+        <div class="menu-links">
+            <ul>
+                <li><a href="../views/home.html">Home</a></li>
+                <li><a href="../views/registerProject.html">Cadastre seu Projeto</a></li>
+            </ul>
+        </div>
+        <a href="../views/home.html" class="logo">
+            <img src="../assets/images/home/logo.png" alt="Logo">
+        </a>
+        <div class="profile">
+            <span id="spanUsername" class="username">Pedro</span>
+            <img id="profileImage" src="../assets/images/home/pedro.png" alt="Perfil" class="profile-img">
+        </div>
+    </header>
+
     <main>
         <div class="content">
-            <img src="../assets/images/home/project.png" alt="Main Image" class="main-image">
-            <div class="text-content">
-                <h1>Lares Solidários: Construindo Esperança, Transformando Vida</h1>
-                <h2>Habitat for Humanity: Unindo Comunidades para um Futuro Mais Promissor</h2>
-                <p>Uma organização internacional que mobiliza voluntários e recursos para construir moradias acessíveis em parceria com famílias de baixa renda. O projeto não apenas constrói casas, mas também capacita as famílias beneficiadas, promovendo a estabilidade habitacional e o fortalecimento das comunidades.</p>
-                <button>Participe</button>
+            <img id="main-image" src="../assets/images/home/project.png" alt="Main Image" class="main-image">
+            <div id="infos_project" class="text-content">
+                <h1 id="projectTitle"></h1>
+                <h2 id="projectSubtitle"></h2>
+                <p id="projectDescription"></p>
+                <button>Participe</button> 
             </div>
         </div>
-    </main>    
-    
-	<footer id="footer">
-		<div class="innerFooter">
-			<h2>Sobre o Projeto	</h2>
-			<p>Nosso objetivo é tornar mais fácil para você encontrar oportunidades de voluntariado que se alinhem com seus interesses e habilidades. As organizações sem fins lucrativos podem publicar suas necessidades de voluntariado na nossa plataforma, e os voluntários podem descobrir projetos que lhes interessam.
-			</p>
-		</div>
-	</footer>
+    </main>
+
+    <footer id="footer">
+        <div class="innerFooter">
+            <h2>Sobre o Projeto</h2>
+            <p>Nosso objetivo é tornar mais fácil para você encontrar oportunidades de voluntariado que se alinhem com
+                seus interesses e habilidades. As organizações sem fins lucrativos podem publicar suas necessidades de
+                voluntariado na nossa plataforma, e os voluntários podem descobrir projetos que lhes interessam.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/project.js"></script>
 </body>
+
 </html>
