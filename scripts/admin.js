@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addUserForm = document.getElementById('addUserForm');
     const userList = document.getElementById('userList');
     const clearListForm = document.getElementById('deleteList');
+    const returnButton = document.getElementById('return');
 
     addUserForm.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -53,4 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     displayUsers();
+
+    if (returnButton) {
+        returnButton.addEventListener('click', () => {
+            window.location.href = 'home.html';  // Redireciona para home.html
+        });
+    } else {
+        console.error('Return button not found!');
+    }
 });

@@ -8,36 +8,66 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(115deg, #75BFAA 10%, #3E8C76 90%);
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(115deg, #75BFAA 10%, #3E8C76 90%);
     margin: 0;
 }
 
-.menu{
-    position: absolute;
-    bottom: 0;
+.menu {
+    background: #41A689;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
 }
 
-h1#adm {
-    color: #3E8C76;
-    padding: 10%;
+.menu-title ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.username {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
 }
 
 .container {
-    margin: auto;
-    width: 100%;
     max-width: 600px;
-    padding: 20px;
-    margin-top: 0;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: static;
+}
+
+h1#adm {
+    color: #fff;
 }
 
 h1 {
     text-align: center;
     color: #3E8C76;
-    margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 form {
