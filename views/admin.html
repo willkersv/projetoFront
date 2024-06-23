@@ -1,36 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciamento de Usuários</title>
-    <style>
-        .user-list {
-            margin-top: 20px;
-        }
-        .user-item {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-        .user-item button {
-            margin-left: 10px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Gerenciamento de Usuários</h1>
-    <form id="addUserForm">
-        <label for="newUserName">Nome:</label>
-        <input type="text" id="newUserName" name="newUserName" required>
-        <br>
-        <label for="newUserEmail">Email:</label>
-        <input type="email" id="newUserEmail" name="newUserEmail" required>
-        <br>
-        <button type="submit">Adicionar Usuário</button>
-    </form>
-    <div class="user-list" id="userList"></div>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerenciamento de Usuários</title>
+        <link rel="stylesheet" href="../styles/admin.css">
+    </head>
+    <body>
+        <header class="menu">
+            <div class="btnReturn">
+                <ul>
+                    <button id="return">↩</button>
+                </ul>
+            </div>
+            <div class="title">
+                <h1 id="adm">Área do Administrador</h1>
+            </div>
+            <div class="profile">
+                <span class="username">Admin</span>
+                <img src="../assets/images/cadProject/pedro.png" alt="Perfil" class="profile-img">
+            </div>
+        </header>
+        
+        <div class="container">
+            <h1>Gerenciamento de Usuários</h1>
+            <form id="addUserForm">
+                <div class="input-container">
+                    <label for="newUserName">Nome:</label>
+                    <input type="text" id="newUserName" name="newUserName" required>
+                </div>
 
-    <script src="../scripts/admin.js"></script>
-</body>
+                <div class="input-container">
+                    <label for="newUserEmail">Email:</label>
+                    <input type="email" id="newUserEmail" name="newUserEmail" required>
+                </div>
+                <button type="submit">Adicionar Usuário</button>
+            </form>
+
+            <form id="deleteList">
+                <h1>Lista de Usuários</h1>
+                <div class="input-container">
+                    <div class="user-list" id="userList"></div>
+                </div>
+                <button type="submit">Limpar Lista</button>
+            </form>
+        </div>
+        <script src="../scripts/admin.js"></script>
+    </body>
 </html>

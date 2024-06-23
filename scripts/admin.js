@@ -1,10 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const addUserForm = document.getElementById('addUserForm');
     const userList = document.getElementById('userList');
+    const clearListForm = document.getElementById('deleteList');
+    const returnButton = document.getElementById('return');
 
     addUserForm.addEventListener('submit', (event) => {
         event.preventDefault();
         addUser();
+    });
+
+    clearListForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        clearUserList();
     });
 
     function addUser() {
@@ -40,5 +47,19 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('users', JSON.stringify(users));
         displayUsers();
     }
+
+    function clearUserList() {
+        localStorage.removeItem('users');
+        displayUsers();
+    }
+
     displayUsers();
+
+    if (returnButton) {
+        returnButton.addEventListener('click', () => {
+            window.location.href = 'home.html';  // Redireciona para home.html
+        });
+    } else {
+        console.error('Return button not found!');
+    }
 });
