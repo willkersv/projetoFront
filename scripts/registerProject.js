@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const form = document.querySelector('form');
 
+    const loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));
+    const spanUsername = document.getElementById('spanUsername');
+    spanUsername.textContent = loggedUser.username;
+    const profileImage = document.getElementById('profileImage');
+    profileImage.src = loggedUser.profileImageBase64;
+
     form.addEventListener('submit', (event) => {
         event.preventDefault();
         console.log('Formulário submetido');  
