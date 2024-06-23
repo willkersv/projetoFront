@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let imagesHtml = '';
             if (project.images.length > 0) {
-                imagesHtml = `<a href="../views/project.html" class="imagefit"><img src="${project.images[0]}" alt="" width="500" height="338"></a>`;
+                imagesHtml = `<img src="${project.images[0]}" alt="" width="500" height="338" class="imagefit">`;
             } else {
-                imagesHtml = `<a href="../views/project.html" class="imagefit"><img src="../assets/images/home/box1.png" alt="" width="500" height="338"></a>`;
+                imagesHtml = `<img src="../assets/images/home/box1.png" alt="" width="500" height="338" class="imagefit">`;
             }
 
             projectBox.innerHTML = `
