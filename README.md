@@ -20,6 +20,8 @@ Se você é uma organização sem fins lucrativos, cadastre-se na nossa platafor
 - Ingryd Belazzi Alves
 - Julio César Bernardo Leite
 
--Link do video: https://youtu.be/RZZzJF19UKY
+-Link do vídeo: https://youtu.be/RZZzJF19UKY
+
+-Link do vídeo 2: https://www.youtube.com/watch?v=f4iOb_L4kbA 
 
 -Link do GitHub Pages: https://willkersv.github.io/projetoFront/views/index.html
