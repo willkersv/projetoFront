@@ -175,3 +175,11 @@ body {
     padding: 10px 20px;
     text-align: center;
 }
+
+#containerAdmin{
+    margin-left: 40px;
+}
+
+#adminAreaLabel{
+    cursor: pointer;
+}

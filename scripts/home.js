@@ -9,13 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const profileImage = document.getElementById('profileImage');
         profileImage.src = loggedUser.profileImageBase64;
-    }
 
-    //vou fazer um sistema para quando o session storage estiver vazio, o cara n consiga entra simplesmente digitando a URL. N fiz isso ainda pq atrapalha os testes!!!!
-    // else {
-    //     // Redirecionar para a página de login se não houver usuário logado
-    //     window.location.href = 'login.html';  // Substitua 'login.html' pelo URL da página de login
-    // }  
+        if(loggedUser.username == 'admin' || loggedUser.email == 'admin'){
+            const testeAdmin = document.getElementById('adminAreaLabel');
+            testeAdmin.hidden = false;
+        }else{
+            const testeAdmin = document.getElementById('adminAreaLabel');
+            testeAdmin.hidden = true;
+        }
+    }
 
     function loadProjects() {
         const projects = JSON.parse(localStorage.getItem('projects')) || [];
@@ -44,6 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
             projectList.appendChild(projectBox);
         });
     }
-
+    
+    document.getElementById('adminAreaLabel').addEventListener('click', function() {
+        window.location.href = '../views/admin.html';
+    });
+    
     loadProjects();
 });
+
+
+

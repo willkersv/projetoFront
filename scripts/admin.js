@@ -3,6 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const userList = document.getElementById('userList');
     const clearListForm = document.getElementById('deleteList');
     const returnButton = document.getElementById('return');
+    const loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));
+
+    if (loggedUser) {
+        const spanUsername = document.getElementById('spanUsername');
+        spanUsername.textContent = loggedUser.username;
+
+        const profileImage = document.getElementById('profileImage');
+        profileImage.src = loggedUser.profileImageBase64;
+    }
 
     addUserForm.addEventListener('submit', (event) => {
         event.preventDefault();
