@@ -1,10 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
     const addUserForm = document.getElementById('addUserForm');
     const userList = document.getElementById('userList');
+    const clearListForm = document.getElementById('deleteList');
+    const returnButton = document.getElementById('return');
+    const loggedUser = JSON.parse(sessionStorage.getItem('loggedUser'));
+
+    if (loggedUser) {
+        const spanUsername = document.getElementById('spanUsername');
+        spanUsername.textContent = loggedUser.username;
+
+        const profileImage = document.getElementById('profileImage');
+        profileImage.src = loggedUser.profileImageBase64;
+    }
 
     addUserForm.addEventListener('submit', (event) => {
         event.preventDefault();
         addUser();
+    });
+
+    clearListForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        clearUserList();
     });
 
     function addUser() {
@@ -40,5 +56,19 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('users', JSON.stringify(users));
         displayUsers();
     }
+
+    function clearUserList() {
+        localStorage.removeItem('users');
+        displayUsers();
+    }
+
     displayUsers();
+
+    if (returnButton) {
+        returnButton.addEventListener('click', () => {
+            window.location.href = 'home.html';  // Redireciona para home.html
+        });
+    } else {
+        console.error('Return button not found!');
+    }
 });

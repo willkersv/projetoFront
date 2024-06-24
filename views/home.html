@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
-<html lang="pt-br">
+<html lang="en">
+	
 <head>
 	<title>Home</title>
 	<meta charset="utf-8">
@@ -19,9 +20,17 @@
 		<a href="/views/home.html" class="logo"> 
 			<img src="../assets/images/home/logo.png" alt="Logo">
 		</a>
-		<div class="profile">
-			<span id="spanUsername"  class="username">Pedro</span>
-			<img id="profileImage" src="../assets/images/home/pedro.png" alt="Perfil" class="profile-img">
+		<div class="admin-profile">
+			<ul id="containerAdmin">
+				<label id="adminAreaLabel" href="../views/admin.html">Área Adimin</label>
+			</ul>
+			<div class="profile">
+				<span id="spanUsername"  class="username">Pedro</span>
+				<img id="profileImage" src="../assets/images/home/pedro.png" alt="Perfil" class="profile-img">
+			</div>
+			<ul>
+				<a href="../views/index.html">Sair</a>
+			</ul>
 		</div>
 	</header>
 		
@@ -30,59 +39,8 @@
 	</div>
 	<main id="main">
 		<div class="inner">
-			<div class="thumbnails">
-
-				<div class="box">
-					<a href="../views/project.html" class="imagefit"><img src="../assets/images/home/box1.png" alt="" width="500" height="338"></a>
-					<div class="inner">
-						<h3>Nascetur nunc varius commodoo</h3>
-						<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nuncnon. Mi accumsan.</p>
-						<a href="../views/project.html" class="button style1 fit">Saiba Mais</a>
-					</div>
-				</div>
-
-				<div class="box">
-					<a href="../views/project.html" class="imagefit"><img src="../assets/images/home/box2.png" alt="" width="500" height="338"></a>
-					<div class="inner">
-						<h3>Nascetur nunc varius commodo</h3>
-						<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc
-							non. Mi accumsan.</p>
-						<a href="../views/project.html" class="button style2 fit">Saiba Mais</a>
-					</div>
-				</div>
-
-				<div class="box">
-					<a href="../views/project.html" class="imagefit"><img src="../assets/images/home/box3.png" alt="" width="500" height="338"></a>
-					<div class="inner">
-						<h3>Nascetur nunc varius commodo</h3>
-						<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc
-							non. Mi accumsan.</p>
-						<a href="../views/project.html" class="button style3 fit">Saiba Mais</a>
-					</div>
-				</div>
-
-				<div class="box">
-					<a href="../views/project.html" class="imagefit"><img src="../assets/images/home/box4.png" alt="" width="500" height="338"></a>
-					<div class="inner">
-						<h3>Nascetur nunc varius commodo</h3>
-						<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc
-							non. Mi accumsan.</p>
-						<a href="../views/project.html" class="button style2 fit">Saiba Mais</a>
-					</div>
-				</div>
-
-				<div class="box">
-					<a href="../views/project.html" class="imagefit"><img src="../assets/images/home/box5.png" alt="" width="500" height="338"></a>
-					<div class="inner">
-						<h3>Nascetur nunc varius commodo</h3>
-						<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc
-							non. Mi accumsan.</p>
-						<a href="../views/project.html" class="button style3 fit">Saiba Mais</a>
-					</div>
-				</div>
-	
+			<div class="thumbnails" id="projectList">
 			</div>
-
 		</div>
 	</main>
     
@@ -93,6 +51,6 @@
 			</p>
 		</div>
 	</footer>
+	<script src="../scripts/home.js"></script>
 </body>
-<script src="../scripts/home.js"></script>
 </html>
